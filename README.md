@@ -10,3 +10,11 @@
 **How to see if posts pod is created and running:**
 - cd to infra\k8s
 - run this command: kubectl get pods
+
+**Some useful commands:**
+- docker ps => kubectl get pods
+- docker exec -it [container id] [cmd] => kubectl exec -it [pod_name] [cmd]
+- kubectl logs [pod_name]
+- kubectl delete pod [pod_name]
+- kubectl apply -f [config file name]
+- kubectl describe pod [pod_name]
