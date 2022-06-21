@@ -11,3 +11,7 @@ spec:
     metadata:
       labels:
         app:posts
+    spec:
+      containers:
+        - name: posts
+          image: mojimich2015/posts:0.0.5
