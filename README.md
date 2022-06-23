@@ -42,3 +42,13 @@ Method 2 Deployment:
     Build image
     Push to container repository
     kubectl rollout restart deployment [depl_name]
+
+Networking and services in kubernetes:
+
+    Create yaml file for NodePort type service
+    kubectl apply -f posts-serv.yaml
+    kubectl get services
+    kubectl describe service [service yaml file name] 
+    Get the ip of cluster using "minikube ip"
+    Or for localhost just use: localhost:nodePort/posts
+    
