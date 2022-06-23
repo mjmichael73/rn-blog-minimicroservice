@@ -51,4 +51,7 @@ Networking and services in kubernetes:
     kubectl describe service [service yaml file name] 
     Get the ip of cluster using "minikube ip"
     Or for localhost just use: localhost:nodePort/posts
-    
+
+Apply all Kubernetes files all at once inside a directory:
+
+    kubectl apply -f .
