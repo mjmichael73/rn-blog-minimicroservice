@@ -30,3 +30,15 @@ Some useful commands for working with deployments:
     kubectl describe deployment [depl name]
     kubectl apply -f [config file name]
     kubetl delete deployment [depl name]
+
+Method 1 Deployment:
+
+    Change the version inside the depl file
+    then kubectl apply
+
+Method 2 Deployment:
+    
+    Use latest tag for image of deployment
+    Build image
+    Push to container repository
+    kubectl rollout restart deployment [depl_name]
