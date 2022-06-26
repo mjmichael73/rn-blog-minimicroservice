@@ -64,3 +64,12 @@ Load balancer stuff (ingress-nginx):
     When applying ingress-srv you may get error, use this link: https://programmerah.com/solved-kubernetes-ingress-srv-error-failed-calling-webhook-validate-nginx-ingress-kubernetes-io-51118/
     kubectl get pods --namespace=ingress-nginx
     kubectl delete namespace ingress-nginx
+
+### For Dev Puposes
+
+    It was added skaffold from https://skaffold.dev
+    to ease changes on local development
+    It has been added skaffold.yaml file 
+    The only thing to start project is running this command: "skaffold dev" inside your root project dir
+    - If you get some errors the first time that you run skaffold dev, Just CTRL + C and then run the skaffold dev again
+    
