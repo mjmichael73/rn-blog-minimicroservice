@@ -55,3 +55,12 @@ Networking and services in kubernetes:
 Apply all Kubernetes files all at once inside a directory:
 
     kubectl apply -f .
+
+Load balancer stuff (ingress-nginx):
+
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+    https://kubernetes.github.io/ingress-nginx/deploy/#docker-desktop
+    https://kubernetes.github.io/ingress-nginx/deploy/#quick-start
+    When applying ingress-srv you may get error, use this link: https://programmerah.com/solved-kubernetes-ingress-srv-error-failed-calling-webhook-validate-nginx-ingress-kubernetes-io-51118/
+    kubectl get pods --namespace=ingress-nginx
+    kubectl delete namespace ingress-nginx
